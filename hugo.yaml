@@ -37,7 +37,8 @@ markup:
     renderHooks:
       link:
         enableDefault: true # 开启默认链接转换（ .md 转换为页面链接）
-
+    renderer:
+      unsafe: true
 # 目录
 menu:
   main:
