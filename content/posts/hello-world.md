@@ -12,8 +12,8 @@ tags:
 
 九年前（ 2016 年）在我还是一个学生的时候，我第一次创建了我的个人博客。可能是分享欲过大，当时还写了不少文章。很多在现在看来都过于幼稚、无聊了。
 
-当时没事就喜欢折腾博客的生成、部署方案。先是按照教程用的 [Jekyll](https://jekyllrb.com/) ，好处是 Jekyll 当时可以由 GitHub Pages
-自动构建（现在有 GitHub Action 都没什么区别了）。后面因为对 Python 比较熟悉换成了 [MkDocs](https://www.mkdocs.org/) ，
+当时没事就喜欢折腾博客的生成、部署方案。先是按照教程用的 [Jekyll](https://jekyllrb.com/) ，好处是 Jekyll 当时可以由 [GitHub Pages](https://pages.github.com/)
+自动构建（现在有 [GitHub Action](https://github.com/features/actions) 都没什么区别了）。后面因为对 Python 比较熟悉换成了 [MkDocs](https://www.mkdocs.org/) ，
 再后面嫌主题太少又换成了 [Hexo](https://hexo.io/zh-cn/) 。部署最开始用 GitHub Pages ，后面因为部分人访问太慢甚至访问不了，换过云对象存储 + CDN ， Nginx ，还折腾过 ICP 备案。
 
 后面工作了就很少有时间更新了。最后因为部分跟公司相关的内容不想被同事看到干脆关闭了。
