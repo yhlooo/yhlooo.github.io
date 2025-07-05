@@ -1,0 +1,89 @@
+# 标题
+title: "yhlooo"
+# 页面 URL
+baseURL: "https://yhlooo.github.io/"
+# 主题
+theme: "hermit-v2"
+
+# 时区
+timeZone: "Asia/Shanghai"
+# 语言
+languageCode: "zh-hans"
+# 默认内容语言
+defaultContentLanguage: "zh-hans"
+# 使用默认语言时是否在 URL 中包含语言子目录
+defaultContentLanguageInSubdir: false
+# 是否包含中文、日文或韩文语言，开启有助于字数统计
+hasCJKLanguage: true
+
+# 通过 git commit 信息获取作为文章最后更新时间
+enableGitInfo: true
+
+# RSS feed 限制文章条数
+rssLimit: 20
+# 版权信息（对于 hermit-v2 主题仅在 RSS 中使用）
+copyright: "Copyright © 2025 yhlooo All Right Reserved"
+# 允许 emoji ，参考 https://gohugo.io/functions/emojify/
+enableEmoji: true
+
+# 分类
+taxonomies:
+  tag: tags
+  category: categories
+
+# 目录
+menu:
+  main:
+    - name: Posts
+      url: posts/
+      weight: 1
+    - name: Tags
+      url: tags/
+      weight: 2
+    - name: Categories
+      url: categories/
+      weight: 3
+    - name: Abort
+      url: about/
+      weight: 4
+
+params:
+  # 作者信息
+  author:
+    name: "yhlooo"
+    about: "about"
+
+  # 日期格式
+  dateform:
+    LongDate: "Jan 2, 2006"
+    ShortDate: "Jan 2"
+    NumDateShort: "2006-01-02"
+    NumDateLong: "2006-01-02 15:04 -0700"
+
+  # 页面 head 上的描述信息
+  description: "yhlooo's personal pages"
+
+  # 主页副标题
+  homeSubtitle: "Hello World!"
+  # 主页副标题打字机特效
+  homeSubtitlePrinter: true
+  # 底部版权信息
+  footerCopyright: '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  # 添加关联文章章节（具有相同 tag 的文章就是关联文章）
+  relatedPosts: true
+  # 分享到社交平台按钮
+  shareSocial: false
+  # 阅读时间
+  readTime: true
+  # 字数和阅读时间之间的分隔符
+  readTimeSeparator: "\u2026 \u23F2 Reading Time:"
+  # 标签符号
+  tagSymbol: "#"
+  # 分类符号
+  categorySymbol: "."
+  # 社交链接
+  socialLinks:
+    - name: "github"
+      url: "https://github.com/yhlooo"
+    - name: "email"
+      url: "mailto:yhlooo.x@outlook.com"
