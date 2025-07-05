@@ -9,9 +9,9 @@ images:
   - https://blog-assets-1253422097.file.myqcloud.com/images/2020-08-08-monon-se/banner.jpg
 ---
 
-客制化键盘我不是第一天入坑了，比如之前组的第一把 GK61s [客制化键盘入坑笔记](/boring-2019-10-18-my-first-custom-keyboard/) 。
+客制化键盘我不是第一天入坑了，比如之前组的第一把 GK61s [客制化键盘入坑笔记](my-first-custom-keyboard.md) 。
 
-但是一直没有弄一把好一点的，直到组了这一把 Monon R2 [键盘客制化 | Monon R2 装配](/boring-2020-06-23-monon-r2/) 。但是 R2 组了是送给朋友的，我自己一直都还没有一把说得过去的键盘。
+但是一直没有弄一把好一点的，直到组了这一把 Monon R2 [键盘客制化 | Monon R2 装配](monon-r2.md) 。但是 R2 组了是送给朋友的，我自己一直都还没有一把说得过去的键盘。
 
 其实我是看了 B 站一个叫 [贝壳的趣物](https://space.bilibili.com/345958916) 的 UP 主的一个视频 [【趣物·客制化】低成本客制化键盘方案—monon se装配实例](https://www.bilibili.com/video/BV1YE41127R2) 才看上了视频里面的 Monon SE 这个外壳。在 [zFrontier](https://www.zfrontier.com/) 找到了设计这个外壳的工作室 Joyeux ，和他们的群号。
 

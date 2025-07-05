@@ -6,10 +6,7 @@ tags:
   - 技术
   - 学习笔记
   - Python
----
-
-> 关于如何使用 Python 发送邮件的一点学习总结
-
+description: "关于如何使用 Python 发送邮件的一点学习总结"
 ---
 
 > *smtplib* 和 *email* 是 *Python* 的两个官方库

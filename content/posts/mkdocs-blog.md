@@ -6,55 +6,39 @@ tags:
   - 技术
   - 学习笔记
   - 建站
+description: "9 分钟拥有一个自己的博客"
 ---
 
-> 9分钟拥有一个自己的博客
+搭建和维护个人博客以及写博客是一件非常酷的事情，这也是每个程序员生活的一部分。一个个人博客既是自己的一张名片也是自己学习的见证。搭建和托管博客的方法有很多，很久以前我曾经使用 GitHub 托管 Jekyll 项目，并通过 GitHub Pages 服务展示博客的方法。 Jekyll 是一个强大的静态网站生成器，结合 GitHub Pages 的完美支持，非常便于你展示你的想法。但是，他并不易于操作，如果没有前端的知识你甚至没法操作，你只能被动接受 Jekyll 主题设计者在设计中加入的一大堆垃圾。
 
----
+如果你只是想好好地写写文章，并让他们优雅地展示出来，那用 Jekyll 肯定是不合适的，或者至少是不方便的。很快我将为你介绍一个更优雅的方式应该具备的特性。
 
-搭建和维护个人博客以及写博客是一件非常酷的事情，这也是每个程序员生活的一部分。一个个人博客既是自己的一张名片也是自己学习的见证。
-
-搭建和托管博客的方法有很多，很久以前我曾经推荐过通过GitHub托管Jekyll项目，并通过GitHub Pages服务展示博客的方法。
-
-> 详见， {% post_link sssta-2017-10-08-SSSTA-Blog %}
-
-Jekyll是一个强大的静态网站生成器，结合GitHub Pages的完美支持，非常便于你展示你的想法。但是，他并不易于操作，如果没有前端的知识你甚至没法操作，你只能被动接受Jekyll主题设计者在设计中加入的一大堆垃圾。
-
-如果你只是想好好地写写文章，并让他们优雅地展示出来，那用Jekyll肯定是不合适的，或者至少是不方便的。很快我将为你介绍一个更优雅的方式应该具备的特性。
-
-## 0. MkDocs概述
+## 0. MkDocs 概述
 
 > MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation.
 >
-> MkDocs是一个致力于构建项目文档的快速、简单和绝对优雅的静态网站生成器。
+> MkDocs 是一个致力于构建项目文档的快速、简单和绝对优雅的静态网站生成器。
 
-MkDocs是被设计用于构建文档的，所以它特别适于注重内容的静态站点，它至少有以下优雅之处
+MkDocs 是被设计用于构建文档的，所以它特别适于注重内容的静态站点，它至少有以下优雅之处
 
 - 清晰的文章分级目录
 - 文章内标题导航
 - 全站文本搜索
-- 全部Python Markdown扩展
-- 优雅、易于阅读的Markdown渲染
+- 全部 Python Markdown 扩展
+- 优雅、易于阅读的 Markdown 渲染
 
-除此之外，MkDocs的多数主题都没有多余的内容，只专注于展示文章，正如 <s>[本站](https://blog.keybrl.com/)</s>（现在本站使用Hexo构建） 所呈现的。而且，你需要做的也只是写文章，其他细节都能很便捷地设置。这比Jekyll还简单，而且更优雅。  
+除此之外， MkDocs 的多数主题都没有多余的内容，只专注于展示文章。而且，你需要做的也只是写文章，其他细节都能很便捷地设置。这比 Jekyll 还简单，而且更优雅。  
 **酷炸了不是吗？**
 
-接下来我将分部分逐步介绍通过MkDocs构建、部署个人博客的过程。点击列表中的超链接可以直接跳转到相应章节。
-
-1. [环境搭建和MkDocs的安装](#1-准备工作)
-2. [构建一个最简单的网站](#2-好的开端)
-3. [通过Markdown写自己的文章](#3-跃动的思想)
-4. [选择主题](#4-颜值即正义)
-5. [完善配置文件](#5-尽在掌控)
-6. [站点托管与部署](#6-锋芒毕露)
+接下来我将分部分逐步介绍通过 MkDocs 构建、部署个人博客的过程。点击列表中的超链接可以直接跳转到相应章节。
 
 > **阅读提示：**
 > 
-> 本篇旨在从一个大的视角了解通过MkDocs构建站点的过程，而不是作为指导工作的手册、文档
+> 本篇旨在从一个大的视角了解通过 MkDocs 构建站点的过程，而不是作为指导工作的手册、文档
 > 
-> 对于上述的部分内容，本篇可能只会作简要描述，并引导读者前去阅读[MkDocs的官方文档](https://www.mkdocs.org/)或另一篇更详尽的文章
+> 对于上述的部分内容，本篇可能只会作简要描述，并引导读者前去阅读 [MkDocs 的官方文档](https://www.mkdocs.org/) 或另一篇更详尽的文章
 > 
-> [本文最后](#建议阅读)有一个列表，列出了全部在本文出现的建议阅读的相关的官方文档和其它文章，它们对于读者建立完善、准确的认识将更有帮助。
+> [本文最后](#建议阅读) 有一个列表，列出了全部在本文出现的建议阅读的相关的官方文档和其它文章，它们对于读者建立完善、准确的认识将更有帮助。
 
 ## 1. 准备工作
 
@@ -66,19 +50,19 @@ MkDocs 是一个以 Python 实现的轻量化静态网站生成器
 apt install python
 ```
 
-> **兼容的Python版本：**
+> **兼容的 Python 版本：**
 > 
-> > 官方文档的说明是：MkDocs supports Python versions 2.7, 3.3, 3.4, 3.5 and pypy.
+> > 官方文档的说明是： MkDocs supports Python versions 2.7, 3.3, 3.4, 3.5 and pypy.
 > 
 > 但事实上我用 Python 3.6 也没有任何问题，所以我建议首先尝试 Python 的最新稳定版，如果存在兼容问题再参考官方推荐
 
-安装Python的第三方包管理器 pip
+安装 Python 的第三方包管理器 pip
 
 ```bash
 apt install python-pip
 ```
 
-在Windows环境下安装 Python 和 pip 请参考 [python.org](https://www.python.org)
+在 Windows 环境下安装 Python 和 pip 请参考 [python.org](https://www.python.org)
 
 然后通过 pip 安装 MkDocs
 
@@ -94,7 +78,7 @@ pip show mkdocs
 
 如果有出现对 MkDocs 的简要描述即安装成功
 
-> **强烈推荐WSL：**
+> **强烈推荐 WSL ：**
 > 
 > 在 Windows 环境下进行与 Web 相关的开发经常都很不方便，如果既不喜欢虚拟机，又不习惯长时间在 Linux 下工作，又不想来回切换系统，那你一定要试试 WSL
 > 
@@ -147,15 +131,15 @@ mkdocs serve
 ## 3. 跃动的思想
 
 一个博客，或者文档，最重要的是里面的内容。和多数博客、文档或别的什么静态网站生成器一样 MkDocs
-支持将用 Markdown 写就的文章转换为具有好看样式的 HTML 页面，而且 MkDocs 只支持 Markdown。只需要将 `.md` 文件放在 `docs/` 目录内， MkDocs 会自动转换他们，按 `docs/` 内的目录结构生成静态页面树，并尽可能将这种结构展现在页面中
+支持将用 Markdown 写就的文章转换为具有好看样式的 HTML 页面，而且 MkDocs 只支持 Markdown 。只需要将 `.md` 文件放在 `docs/` 目录内， MkDocs 会自动转换他们，按 `docs/` 内的目录结构生成静态页面树，并尽可能将这种结构展现在页面中
 
 > **关于文档结构：**
 > 
-> MkDocs会尽量自动展现文档结构，你也可以通过修改 `mkdocs.yml` 文件来自定义文档结构，详见 [5. 尽在掌控](#5-尽在掌控) 中关于修改配置文件的说明
+> MkDocs 会尽量自动展现文档结构，你也可以通过修改 `mkdocs.yml` 文件来自定义文档结构，详见 [5. 尽在掌控](#5-尽在掌控) 中关于修改配置文件的说明
 > 
 > 不同的 MkDocs 主题对文档结构的呈现能力不同，但他们一般都不能呈现超过两层的文件目录
 
-MkDocs 对 Markdown 的转换是通过 [Python-Markdown](https://github.com/Python-Markdown/markdown) （一个 Python 的第三方库）实现的，所以除了支持标准的 Markdown 语法 （见[Daring Fireball: Markdown Syntax Documentation](https://daringfireball.net/projects/markdown/syntax)），也支持 Python-Markdown 支持的多数 Markdown 扩展 （详见其[官方文档](https://python-markdown.github.io/extensions/)）
+MkDocs 对 Markdown 的转换是通过 [Python-Markdown](https://github.com/Python-Markdown/markdown) （一个 Python 的第三方库）实现的，所以除了支持标准的 Markdown 语法 （见 [Daring Fireball: Markdown Syntax Documentation](https://daringfireball.net/projects/markdown/syntax) ），也支持 Python-Markdown 支持的多数 Markdown 扩展 （详见其[官方文档](https://python-markdown.github.io/extensions/) ）
 
 ## 4. 颜值即正义
 
@@ -185,7 +169,7 @@ theme: 'readthedocs'
 
 GitHub Pages 不只能简单地展示 master 分支内的内容，他还能部署任意一个分支或者 master branch /docs folder 。所以如果我们要在一个 GitHub 仓库中展示 MkDocs 项目并部署其生成的静态网站，我们可以将它们分在两个分支中。将 MkDocs 项目的全部文件放在 master 分支，按照正常方法管理。创建一个专门用于部署静态网站的分支，比如我设置的是 `gh-pages` ，在里面放置 `site/` 中的文件，并在该分支开启 GitHub Pages 服务即可。
 
-不要急着复制 `site/` 中的文件， MkDocs 提供了 gh-deploy 工具，他可以帮你一键 build、commit、push
+不要急着复制 `site/` 中的文件， MkDocs 提供了 gh-deploy 工具，他可以帮你一键 build 、 commit 、 push
 
 在 `mkdocs.yml` 文件中加入以下内容
 
@@ -202,7 +186,7 @@ remote_name: origin
 mkdocs gh-deploy
 ```
 
-MkDocs 会自动 build 该项目并 commit、push 到该项目仓库的指定分支，第一次使用该功能可能需要登录，按提示操作即可
+MkDocs 会自动 build 该项目并 commit 、 push 到该项目仓库的指定分支，第一次使用该功能可能需要登录，按提示操作即可
 
 如果分支设置、 GitHub Pages 设置、 gh-deploy 设置都正确的话，理论上讲你就已经把最新构建的网站部署了
 
@@ -210,8 +194,7 @@ MkDocs 会自动 build 该项目并 commit、push 到该项目仓库的指定分
 
 ## 建议阅读
 
-- MkDocs官方文档 [MkDocs](https://www.mkdocs.org/)
-- Python-Markdown的GitHub仓库 [Python-Markdown](https://github.com/Python-Markdown/markdown)
+- MkDocs 官方文档 [MkDocs](https://www.mkdocs.org/)
+- Python-Markdown 的 GitHub 仓库 [Python-Markdown](https://github.com/Python-Markdown/markdown)
 - 标准 Markdown 语法规范文档 [Daring Fireball: Markdown Syntax Documentation](https://daringfireball.net/projects/markdown/syntax)
-- [MkDocs社区wiki](https://github.com/mkdocs/mkdocs/wiki/)
-- {% post_link sssta-2017-10-08-SSSTA-Blog %}
+- [MkDocs 社区 wiki](https://github.com/mkdocs/mkdocs/wiki/)

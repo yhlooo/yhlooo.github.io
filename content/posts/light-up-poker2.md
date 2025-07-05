@@ -7,9 +7,8 @@ tags:
   - 键盘
 images:
   - https://blog-assets-1253422097.file.myqcloud.com/images/2018-01-20-lighted-poker2/28.jpg
+description: "记录我为我的Poker2加上背光的过程，作为纪念"
 ---
-
-> 记录我为我的Poker2加上背光的过程，作为纪念
 
 首先我特别想安利一波 Poker2 ， Poker2 是非常优雅的一款键盘。
 

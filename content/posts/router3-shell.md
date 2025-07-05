@@ -9,7 +9,7 @@ images:
   - https://blog-assets-1253422097.file.myqcloud.com/images/2019-02-22-router3-shell/banner.jpg
 ---
 
-2018年秋冬之交（双十一前后），用工控主板搭了一个软路由和 NAS ，详见这两篇文章 {% post_link boring-2018-11-02-router1-hardware %} 和 {% post_link boring-2019-02-18-router2-software %}
+2018年秋冬之交（双十一前后），用工控主板搭了一个软路由和 NAS ，详见这两篇文章 [软路由与 NAS (1) - 硬件平台搭建](router1-hardware.md) 和 [软路由与 NAS (2) - 软件平台搭建](router2-software.md)
 
 当时刚弄好是这个样子的
 
