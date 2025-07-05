@@ -31,6 +31,13 @@ taxonomies:
   tag: tags
   category: categories
 
+# 标记语言选项
+markup:
+  goldmark:
+    renderHooks:
+      link:
+        enableDefault: true # 开启默认链接转换（ .md 转换为页面链接）
+
 # 目录
 menu:
   main:
