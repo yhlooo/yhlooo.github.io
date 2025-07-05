@@ -1,8 +1,6 @@
-# yhlooo
+# yhlooo 个人站点
 
-🔨 5 年软件行业从业人员，喜欢没事写点代码 | 5-year software industry practitioner, likes writing code for fun.
+![GitHub License](https://img.shields.io/github/license/yhlooo/yhlooo.github.io)
+[![pages](https://github.com/yhlooo/yhlooo.github.io/actions/workflows/pages.yaml/badge.svg)](https://github.com/yhlooo/yhlooo.github.ioactions/workflows/pages.yaml)
 
-👍 擅长 | Expertise ：
-
-- [Kubernetes](https://kubernetes.io/)
-- [Go (Golang)](https://go.dev/)
+该项目是本人个人站点，由 [Hugo](https://gohugo.io/) 构建，见 <https://yhlooo.github.io> 。
