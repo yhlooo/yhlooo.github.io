@@ -1,13 +1,12 @@
 ---
 title: "点亮 IKBC Poker2"
 date: 2018-01-20T10:00:00+08:00
-draft: false
 toc: true
-images:
-  - https://blog-assets-1253422097.file.myqcloud.com/images/2018-01-20-lighted-poker2/28.jpg
 tags:
   - DIY
   - 键盘
+images:
+  - https://blog-assets-1253422097.file.myqcloud.com/images/2018-01-20-lighted-poker2/28.jpg
 ---
 
 > 记录我为我的Poker2加上背光的过程，作为纪念
