@@ -1,0 +1,15 @@
+# IDE / Editor
+.idea/
+.fleet/
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Generated files by Hugo
+/public/
+resources/
+.hugo_build.lock
+
+# Temp
+/temp/
