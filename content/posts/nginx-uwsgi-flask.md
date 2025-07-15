@@ -2,6 +2,7 @@
 title: "CentOS 中通过 Nginx 和 uWSGI 部署 Flask 项目"
 date: 2017-08-01T10:00:00+08:00
 toc: true
+draft: true
 tags:
   - 技术
   - 学习笔记

@@ -2,6 +2,7 @@
 title: "Nginx 常用配置套路"
 date: 2018-07-02T10:00:00+08:00
 toc: true
+draft: true
 tags:
   - 技术
   - 学习笔记

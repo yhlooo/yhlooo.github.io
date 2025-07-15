@@ -2,6 +2,7 @@
 title: "Windows 常用注册表项"
 date: 2018-10-23T10:00:00+08:00
 toc: true
+draft: true
 tags:
   - 技术
   - Windows

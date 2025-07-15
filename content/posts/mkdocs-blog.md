@@ -2,6 +2,7 @@
 title: "通过 MkDocs 搭建个人博客"
 date: 2018-05-19T10:00:00+08:00
 toc: true
+draft: true
 tags:
   - 技术
   - 学习笔记
